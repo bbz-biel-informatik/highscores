@@ -1,0 +1,11 @@
+<script>
+var formData = new FormData();
+
+formData.append("game", "Pingugame");
+formData.append("name", "aabbccdd");
+formData.append("score", 125);
+
+var request = new XMLHttpRequest();
+request.open("POST", "http://localhost:9292/score");
+request.send(formData);
+</script>
